@@ -1,12 +1,10 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { HiCursorClick } from "react-icons/hi"
-import { Carousel } from 'flowbite-react';
 import { Accordion } from 'flowbite-react';
 
 
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -220,16 +218,6 @@ export default function Home() {
         </Accordion>
 
       </div>
-
-      {/* <div className="flex justify-center h-56 sm:h-64 xl:h-80 2xl:h-96">
-        <Carousel className='w-[90%]' pauseOnHover>
-          <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-          <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-          <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-          <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-          <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-        </Carousel>
-      </div> */}
 
 
     </div>
