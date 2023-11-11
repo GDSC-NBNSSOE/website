@@ -1,10 +1,6 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import { HiCursorClick } from "react-icons/hi"
 import { Accordion } from 'flowbite-react';
-
-
-
 
 export default function Home() {
   return (
