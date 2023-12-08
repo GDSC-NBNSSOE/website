@@ -80,9 +80,6 @@ function alumni() {
               </>
             ))}
           </div>
-
-
-
         </div>
       </div>
     </div>
