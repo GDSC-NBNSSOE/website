@@ -5,10 +5,11 @@ import { Faq } from "@/components/Faq";
 import { Newsletter } from "@/components/Newsletter";
 import { RecentEvent } from "@/components/RecentEvent";
 import { Technologies } from "@/components/Technologies";
+import { About } from "@/components/About";
 
 export default function Home() {
   return (
-    <div className="p-0 m-0 w-screen mt-[0px] bg-white">
+    <div className="p-0 m-0 w-full mt-[0px] bg-white">
       <div className="flex w-full justify-around px-[200px]">
         <div className="flex flex-col text-black w-full pt-20">
           <p className="text-5xl font-bold text-gray-800">
@@ -65,6 +66,7 @@ export default function Home() {
 
       </div>
       <Technologies />
+      <hr/>
 
       <div className="flex w-full justify-around px-[200px] p-7">
         <div className="flex flex-col text-black w-full pt-20">
@@ -74,10 +76,11 @@ export default function Home() {
             neque fuga aliquam. Doloribus, voluptatem odit aspernatur minima
             quis?
           </p>
-          <div className="mt-5 px-3 py-2 text-white bg-blue-500 font-semibold cursor-pointer hover:text-black hover:bg-blue-100 flex items-center justify-center w-[100px] h-10 ">
+          <div className="mt-5 px-3 py-2 text-white bg-blue-500 font-semibold cursor-pointer hover:bg-blue-700 hover:shadow-xl flex items-center justify-center w-[100px] h-10 ">
             SEE MORE
           </div>
         </div>
+        {/* <hr className="text-black bg-black h-[1px] w-[100%] mb-10" /> */}
         <div className="w-full flex justify-end ">
           <Image
             src={"/index/main.gif"}
@@ -105,13 +108,17 @@ export default function Home() {
             and even Tailwind UI as there is no technical reason stopping you
             from using the best of two worlds.
           </p>
-          <div className="mt-10 px-3 py-2 text-white bg-blue-500 font-semibold cursor-pointer hover:text-black hover:bg-blue-100 flex items-center justify-center w-[100px] h-10 ">
+          <div className="mt-10 px-3 py-2 text-white bg-blue-500 font-semibold cursor-pointer hover:bg-blue-700 hover:shadow-xl flex items-center justify-center w-[100px] h-10 ">
             SEE MORE
           </div>
         </div>
       </div>
 
       <Newsletter />
+      <About/>
+      <div className="w-[100%]">
+      <iframe className="mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.926865326245!2d73.83619269983157!3d18.462655864361228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29549639d8dbf%3A0x335143a9a3e9c68e!2sNBN%20Sinhgad%20School%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1701775066565!5m2!1sen!2sin" width="1500" height="400" loading="lazy"></iframe>
+      </div>
       <Faq />
 
 

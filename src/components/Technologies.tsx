@@ -25,7 +25,7 @@ export function Technologies() {
         <p className="text-4xl font-bold text-red-500">
           Android Development
         </p>
-        <p className="w-[100%] mt-7 text-md spacing text-gray-600 font-sans">
+        <p className="w-[100%] mt-7 text-md spacing text-gray-600 font-sans text-xl">
           Every year Google developers release exciting new updates to the
           world's most popular operating system. We always have sessions to
           keep you updated and mastering the latest trends in modern Android
@@ -56,7 +56,7 @@ export function Technologies() {
         <p className="text-4xl font-bold text-orange-600">
           Web Development
         </p>
-        <p className="w-[100%] mt-7 text-md spacing text-gray-600 font-sans">
+        <p className="w-[100%] mt-7 spacing text-gray-600 font-sans text-xl">
           Learn the core foundations of a delightful web experience both for
           the user and developer. Stay up to tabs with emerging and trending
           technologies. Get access to a guided, tutorial and hands-on coding
@@ -84,7 +84,7 @@ export function Technologies() {
       </div>
       <div className="flex flex-col text-black pt-10 w-full ml-[10x]">
         <p className="text-4xl font-bold text-green-600">Cloud Computing</p>
-        <p className="w-[90%] mt-7 text-md spacing text-gray-600 font-sans">
+        <p className="w-[90%] mt-7 spacing text-gray-600 font-sans text-xl">
           For passionate developers who want to stay relevant in a cloud
           first world where businesses demand for agility and innovation and
           prompt rise of cloud-native applications to bridges gaps between
@@ -114,7 +114,7 @@ export function Technologies() {
         <p className="text-4xl font-bold text-blue-600">
           Machine Intelligence
         </p>
-        <p className="w-[100%] mt-7 text-md spacing text-gray-600 font-sans">
+        <p className="w-[100%] mt-7 spacing text-gray-600 font-sans text-xl">
           Learn how to drive user engagement and retention with intelligent
           apps that are able to effectively serve users what they need
           without the fuss by providing these systems with the ability to
