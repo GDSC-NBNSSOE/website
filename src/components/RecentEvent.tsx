@@ -7,7 +7,7 @@ export function RecentEvent() {
       <p className="text-5xl text-gray-900 font-normal text-center mt-10">
         Recent Events
       </p>
-      <div className="flex gap-7 justify-center mt-20">
+      <div className="flex flex-wrap gap-7 justify-center mt-20">
         <Card
           className="max-w-xs"
           imgAlt="Meaningful alt text for an image that is not purely decorative"
@@ -57,7 +57,7 @@ export function RecentEvent() {
           </div>
         </Card>
       </div>
-      <p className="mt-7 px-3 py-2 ml-[45%] text-white bg-blue-500 font-semibold cursor-pointer hover:bg-blue-700 hover:shadow-xl text-center w-[140px] h-10">
+      <p className="mt-7 px-3 py-2 m-auto text-white bg-blue-500 font-semibold cursor-pointer hover:bg-blue-700 hover:shadow-xl text-center w-[140px] h-10 sm:m-auto sm:mt-7">
         SEE MORE
       </p>
     </div>

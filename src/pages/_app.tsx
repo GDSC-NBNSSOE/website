@@ -5,7 +5,7 @@ import RootFooter from '@/components/Footer'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className="p-0 m-0 bg-white w-screen h-screen">
+    <main className="p-0 m-0 bg-white">
       <RootNavbar/>
       <Component {...pageProps} />
       <RootFooter/>

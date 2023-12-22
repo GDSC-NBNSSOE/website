@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { HiCursorClick, HiX } from "react-icons/hi";
-import { Accordion, Banner, Button, Card, TextInput, Label } from "flowbite-react";
+import { Accordion, Banner, Button, Card, TextInput, Label, Sidebar } from "flowbite-react";
 import { Faq } from "@/components/Faq";
 import { Newsletter } from "@/components/Newsletter";
 import { RecentEvent } from "@/components/RecentEvent";
@@ -9,17 +9,17 @@ import { About } from "@/components/About";
 
 export default function Home() {
   return (
-    <div className="p-0 m-0 w-full mt-[0px] bg-white">
-      <div className="flex w-full justify-around px-[200px]">
-        <div className="flex flex-col text-black w-full pt-20">
-          <p className="text-5xl font-bold text-gray-800">
+    <div className="p-0 m-0 w-screen bg-white">{/* */}
+      <div className="flex w-full">{/*justify-around px-[200px] */}
+        <div className="flex flex-col text-black w-[50%] pt-20 pl-32 lg:p-5 lg:mt-10 md:w-full md:pl-0 md:justify-center sm:w-full sm:p-10 md:w-full md:p-10 xl:pl-20">
+          <p className="text-5xl font-bold text-gray-800 md:text-center sm:text-center md:text-center lg:text-4xl xl:5xl">
             <span className="text-red-500">G</span>
             <span className="text-blue-500">D</span>
             <span className="text-green-500">S</span>
             <span className="text-yellow-300">C </span>
             NBNSSOE PUNE
           </p>
-          <p className="w-[70%] mt-7 text-xl font-extrabold spacing text-gray-600 font-sans">
+          <p className="w-[70%] mt-7 text-xl font-extrabold spacing text-gray-600 font-sans sm:text-center sm:w-full md:w-full md:text-center md:pl-10 lg:w-[100%] xl:w-[100%]">
             A community of <span className="text-green-500">Developers</span>,{" "}
             <span className="text-red-500">Designers</span> and{" "}
             <span className="text-blue-500">Programmers</span> who grow their
@@ -27,20 +27,21 @@ export default function Home() {
             for local businesses and their community.
           </p>
 
-          <div className="mt-10 border-2 border-green-500 rounded-lg px-3 py-2 text-green-500 font-semibold cursor-pointer hover:bg-green-500 hover:text-green-200 flex items-center justify-center w-[200px] h-14 shadow-lg hover:shadow-xl">
+          <div className="mt-10 border-2 border-green-500 rounded-lg px-3 py-2 text-green-500 font-semibold cursor-pointer hover:bg-green-500 hover:text-green-200 flex items-center justify-center w-[200px] h-14 shadow-lg hover:shadow-xl sm:m-auto sm:mt-5  md:m-auto md:mt-9">
             <HiCursorClick size="25" className="mr-2 flex items-center" />
             Join Us
           </div>
 
         </div>
-
-        <div className="w-full flex justify-end ">
+        <div className="w-70% sm:hidden lg:w-[50%] lg:mt-7 xl:w-[50%] xl:mt-8">
+        <div className="w-[100%] lg:flex md:hidden">
           <Image
             src={"/index/main.gif"}
             alt="GDSC NBNSSOE LOGO"
             width={700}
             height={800}
           />
+        </div>
         </div>
       </div>
 
@@ -68,20 +69,20 @@ export default function Home() {
       <Technologies />
       <hr/>
 
-      <div className="flex w-full justify-around px-[200px] p-7">
+      <div className="flex w-full  p-7 2xl:px-20">{/*px-[200px]*/}
         <div className="flex flex-col text-black w-full pt-20">
-          <p className="text-5xl text-gray-900 font-normal">Projects</p>
-          <p className="mt-40">
+          <p className="text-5xl text-gray-900 font-normal sm:text-center">Projects</p>
+          <p className="mt-40 sm:text-center sm:mt-14">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
             neque fuga aliquam. Doloribus, voluptatem odit aspernatur minima
             quis?
           </p>
-          <div className="mt-5 px-3 py-2 text-white bg-blue-500 font-semibold cursor-pointer hover:bg-blue-700 hover:shadow-xl flex items-center justify-center w-[100px] h-10 ">
+          <div className="mt-5 px-3 py-2 text-white bg-blue-500 font-semibold cursor-pointer hover:bg-blue-700 hover:shadow-xl flex items-center justify-center w-[100px] h-10 sm:m-auto sm:mt-6">
             SEE MORE
           </div>
         </div>
         {/* <hr className="text-black bg-black h-[1px] w-[100%] mb-10" /> */}
-        <div className="w-full flex justify-end ">
+        <div className="w-full flex justify-end sm:hidden ">
           <Image
             src={"/index/main.gif"}
             alt="GDSC NBNSSOE LOGO"
@@ -91,16 +92,17 @@ export default function Home() {
         </div>
       </div>
       <RecentEvent />
-      <div className="flex w-full justify-around px-[200px] p-7">
+      <div className="flex w-full items-center p-10 gap-10 2xl:p-20">
         <div className="flex flex-col text-black w-full">
-          <p className="text-5xl text-gray-900 font-normal">Team</p>
+          <p className="text-5xl text-gray-900 font-normal mb-10">Team</p>
+          <div className="w-full flex justify-end xl:w-[80%] 2xl:w-[80%]">
           <Image
             src={"/index/project-img.jpg"}
             alt="GDSC NBNSSOE LOGO"
-            width={350}
-            height={500}
-            className="h-[250px] mt-10"
+            width={700}
+            height={800}
           />
+          </div>
         </div>
         <div className="flex flex-col text-black w-full">
           <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl mt-20">
@@ -116,8 +118,8 @@ export default function Home() {
 
       <Newsletter />
       <About/>
-      <div className="w-[100%]">
-      <iframe className="mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.926865326245!2d73.83619269983157!3d18.462655864361228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29549639d8dbf%3A0x335143a9a3e9c68e!2sNBN%20Sinhgad%20School%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1701775066565!5m2!1sen!2sin" width="1500" height="400" loading="lazy"></iframe>
+      <div className="w-screen">
+      <iframe className="mt-5 w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.926865326245!2d73.83619269983157!3d18.462655864361228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29549639d8dbf%3A0x335143a9a3e9c68e!2sNBN%20Sinhgad%20School%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1701775066565!5m2!1sen!2sin" width="1500" height="400" loading="lazy"></iframe>
       </div>
       <Faq />
 
