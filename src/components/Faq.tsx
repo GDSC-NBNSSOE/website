@@ -3,13 +3,13 @@ import React from 'react'
 
 export function Faq() {
     return (
-            <div className="bg-white w-full p-10 flex flex-col items-center">
+            <div className="bg-white p-10 flex flex-col items-center">
                 <hr className="text-black bg-black h-[1px] w-[80%] mb-10" />
                 <p className="text-5xl text-gray-900 font-normal">
                     Frequently Asked Questions
                 </p>
 
-                <Accordion className="w-[60%] mt-14">
+                <Accordion className="w-[85%] mt-14">
                     <Accordion.Panel>
                         <Accordion.Title>What is GDSC?</Accordion.Title>
                         <Accordion.Content>
