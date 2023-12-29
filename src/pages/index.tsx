@@ -9,8 +9,8 @@ import { About } from "@/components/About";
 
 export default function Home() {
   return (
-    <div className="p-0 m-0 w-screen bg-white">{/* */}
-      <div className="flex w-full">{/*justify-around px-[200px] */}
+    <div className="">
+      <div className="flex">
         <div className="flex flex-col text-black w-[50%] pt-20 pl-32 lg:p-5 lg:mt-10 md:w-full md:pl-0 md:justify-center sm:w-full sm:p-10 md:w-full md:p-10 xl:pl-20">
           <p className="text-5xl font-bold text-gray-800 md:text-center sm:text-center md:text-center lg:text-4xl xl:5xl">
             <span className="text-red-500">G</span>
@@ -34,14 +34,14 @@ export default function Home() {
 
         </div>
         <div className="w-70% sm:hidden lg:w-[50%] lg:mt-7 xl:w-[50%] xl:mt-8">
-        <div className="w-[100%] lg:flex md:hidden">
-          <Image
-            src={"/index/main.gif"}
-            alt="GDSC NBNSSOE LOGO"
-            width={700}
-            height={800}
-          />
-        </div>
+          <div className="w-[100%] lg:flex md:hidden">
+            <Image
+              src={"/index/main.gif"}
+              alt="GDSC NBNSSOE LOGO"
+              width={700}
+              height={800}
+            />
+          </div>
         </div>
       </div>
 
@@ -67,12 +67,12 @@ export default function Home() {
 
       </div>
       <Technologies />
-      <hr/>
+      <hr />
 
-      <div className="flex w-full  p-7 2xl:px-20">{/*px-[200px]*/}
-        <div className="flex flex-col text-black w-full pt-20">
+      <div className="flex p-7 2xl:px-20 justify-center items-center">
+        <div className="flex flex-col text-black w-[45%] pt-10 sm:w-full">
           <p className="text-5xl text-gray-900 font-normal sm:text-center">Projects</p>
-          <p className="mt-40 sm:text-center sm:mt-14">
+          <p className="mt-14 sm:text-center sm:mt-14 text-2xl w-[90%] text-gray-500 sm:w-full sm:text-xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
             neque fuga aliquam. Doloribus, voluptatem odit aspernatur minima
             quis?
@@ -81,31 +81,32 @@ export default function Home() {
             SEE MORE
           </div>
         </div>
-        {/* <hr className="text-black bg-black h-[1px] w-[100%] mb-10" /> */}
-        <div className="w-full flex justify-end sm:hidden ">
+        <div className=" flex justify-center items-center sm:hidden w-[40%]">
           <Image
             src={"/index/main.gif"}
             alt="GDSC NBNSSOE LOGO"
             width={700}
-            height={800}
+            height={700}
+            className="w-[100%] h-96"
           />
         </div>
       </div>
       <RecentEvent />
-      <div className="flex w-full items-center p-10 gap-10 2xl:p-20">
-        <div className="flex flex-col text-black w-full">
+      <div className="flex p-10 gap-10 sm:flex-col">
+        <div className="flex flex-col text-black w-[40%] 2xl:pl-40 sm:w-full sm:items-center">
           <p className="text-5xl text-gray-900 font-normal mb-10">Team</p>
-          <div className="w-full flex justify-end xl:w-[80%] 2xl:w-[80%]">
-          <Image
-            src={"/index/project-img.jpg"}
-            alt="GDSC NBNSSOE LOGO"
-            width={700}
-            height={800}
-          />
+          <div className="">
+            <Image
+              src={"/index/project-img.jpg"}
+              alt="GDSC NBNSSOE LOGO"
+              width={600}
+              height={600}
+              className="h-64 w-80 "
+            />
           </div>
         </div>
-        <div className="flex flex-col text-black w-full">
-          <p className="mb-2 text-gray-500 dark:text-gray-400 text-xl mt-20">
+        <div className="flex flex-col text-black w-[60%] sm:w-full">
+          <p className="mb-2 text-gray-500 dark:text-gray-400 text-2xl mt-28 md:text-xl md:mb-0 2xl:w-[62%] sm:mt-0 sm:text-xl">
             However, we actually recommend using both Flowbite, Flowbite Pro,
             and even Tailwind UI as there is no technical reason stopping you
             from using the best of two worlds.
@@ -117,9 +118,9 @@ export default function Home() {
       </div>
 
       <Newsletter />
-      <About/>
+      <About />
       <div className="w-screen">
-      <iframe className="mt-5 w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.926865326245!2d73.83619269983157!3d18.462655864361228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29549639d8dbf%3A0x335143a9a3e9c68e!2sNBN%20Sinhgad%20School%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1701775066565!5m2!1sen!2sin" width="1500" height="400" loading="lazy"></iframe>
+        <iframe className="mt-5 w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.926865326245!2d73.83619269983157!3d18.462655864361228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29549639d8dbf%3A0x335143a9a3e9c68e!2sNBN%20Sinhgad%20School%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1701775066565!5m2!1sen!2sin" width="1500" height="400" loading="lazy"></iframe>
       </div>
       <Faq />
 
