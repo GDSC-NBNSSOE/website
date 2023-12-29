@@ -10,7 +10,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      'sm': {'min': '350px', 'max': '600px'},
+      'sm': {'min': '320px', 'max': '600px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
       'md': {'min': '600px', 'max': '785px'}, //768
