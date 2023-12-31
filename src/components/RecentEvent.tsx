@@ -4,8 +4,8 @@ import React from 'react'
 export function RecentEvent() {
   return (
     <div className="bg-gray-100 p-7">
-      <p className="text-5xl text-gray-900 font-normal text-center mt-10">
-        Recent Events
+      <p className="text-5xl text-black font-sans font-medium text-center mt-10">
+        RECENT EVENTS
       </p>
       <div className="flex flex-wrap gap-7 justify-center mt-20">
         <Card
